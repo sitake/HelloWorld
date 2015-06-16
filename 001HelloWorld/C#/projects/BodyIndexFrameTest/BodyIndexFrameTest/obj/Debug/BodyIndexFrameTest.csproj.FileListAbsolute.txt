@@ -1,0 +1,15 @@
+E:\work\C#\projects\BodyIndexFrameTest\BodyIndexFrameTest\bin\Debug\BodyIndexFrameTest.exe.config
+E:\work\C#\projects\BodyIndexFrameTest\BodyIndexFrameTest\bin\Debug\BodyIndexFrameTest.exe
+E:\work\C#\projects\BodyIndexFrameTest\BodyIndexFrameTest\bin\Debug\BodyIndexFrameTest.pdb
+E:\work\C#\projects\BodyIndexFrameTest\BodyIndexFrameTest\bin\Debug\Microsoft.Kinect.dll
+E:\work\C#\projects\BodyIndexFrameTest\BodyIndexFrameTest\bin\Debug\Microsoft.Kinect.xml
+E:\work\C#\projects\BodyIndexFrameTest\BodyIndexFrameTest\obj\Debug\BodyIndexFrameTest.csprojResolveAssemblyReference.cache
+E:\work\C#\projects\BodyIndexFrameTest\BodyIndexFrameTest\obj\Debug\MainWindow.baml
+E:\work\C#\projects\BodyIndexFrameTest\BodyIndexFrameTest\obj\Debug\MainWindow.g.cs
+E:\work\C#\projects\BodyIndexFrameTest\BodyIndexFrameTest\obj\Debug\App.g.cs
+E:\work\C#\projects\BodyIndexFrameTest\BodyIndexFrameTest\obj\Debug\BodyIndexFrameTest_MarkupCompile.cache
+E:\work\C#\projects\BodyIndexFrameTest\BodyIndexFrameTest\obj\Debug\BodyIndexFrameTest.g.resources
+E:\work\C#\projects\BodyIndexFrameTest\BodyIndexFrameTest\obj\Debug\BodyIndexFrameTest.Properties.Resources.resources
+E:\work\C#\projects\BodyIndexFrameTest\BodyIndexFrameTest\obj\Debug\BodyIndexFrameTest.csproj.GenerateResource.Cache
+E:\work\C#\projects\BodyIndexFrameTest\BodyIndexFrameTest\obj\Debug\BodyIndexFrameTest.exe
+E:\work\C#\projects\BodyIndexFrameTest\BodyIndexFrameTest\obj\Debug\BodyIndexFrameTest.pdb

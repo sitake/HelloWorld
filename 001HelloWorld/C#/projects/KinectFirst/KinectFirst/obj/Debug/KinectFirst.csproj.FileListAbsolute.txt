@@ -1,0 +1,1 @@
+E:\work\C#\projects\KinectFirst\KinectFirst\bin\Debug\KinectFirst.exe.config

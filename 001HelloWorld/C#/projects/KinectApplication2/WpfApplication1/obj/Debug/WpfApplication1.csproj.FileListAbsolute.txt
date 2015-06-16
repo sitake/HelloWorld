@@ -1,0 +1,15 @@
+E:\work\C#\projects\KinectApplication2\WpfApplication1\bin\Debug\WpfApplication1.exe.config
+E:\work\C#\projects\KinectApplication2\WpfApplication1\bin\Debug\WpfApplication1.exe
+E:\work\C#\projects\KinectApplication2\WpfApplication1\bin\Debug\WpfApplication1.pdb
+E:\work\C#\projects\KinectApplication2\WpfApplication1\bin\Debug\Microsoft.Kinect.dll
+E:\work\C#\projects\KinectApplication2\WpfApplication1\bin\Debug\Microsoft.Kinect.xml
+E:\work\C#\projects\KinectApplication2\WpfApplication1\obj\Debug\WpfApplication1.csprojResolveAssemblyReference.cache
+E:\work\C#\projects\KinectApplication2\WpfApplication1\obj\Debug\MainWindow.baml
+E:\work\C#\projects\KinectApplication2\WpfApplication1\obj\Debug\MainWindow.g.cs
+E:\work\C#\projects\KinectApplication2\WpfApplication1\obj\Debug\App.g.cs
+E:\work\C#\projects\KinectApplication2\WpfApplication1\obj\Debug\WpfApplication1_MarkupCompile.cache
+E:\work\C#\projects\KinectApplication2\WpfApplication1\obj\Debug\WpfApplication1.g.resources
+E:\work\C#\projects\KinectApplication2\WpfApplication1\obj\Debug\WpfApplication1.Properties.Resources.resources
+E:\work\C#\projects\KinectApplication2\WpfApplication1\obj\Debug\WpfApplication1.csproj.GenerateResource.Cache
+E:\work\C#\projects\KinectApplication2\WpfApplication1\obj\Debug\WpfApplication1.exe
+E:\work\C#\projects\KinectApplication2\WpfApplication1\obj\Debug\WpfApplication1.pdb

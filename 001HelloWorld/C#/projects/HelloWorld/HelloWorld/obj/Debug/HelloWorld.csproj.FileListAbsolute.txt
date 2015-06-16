@@ -1,0 +1,1 @@
+E:\work\C#\projects\HelloWorld\HelloWorld\bin\Debug\HelloWorld.exe.config
