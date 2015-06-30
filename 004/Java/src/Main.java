@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Collections;
 
 /**
  * Created by naoki on 2015/06/27.
@@ -15,9 +16,12 @@ public class Main {
         list.add(101);
         list.add(4);
         list.add(63);
+//
+//        System.out.println(ListTest.getMax(list));
+//        System.out.println(ListTest.getMin(list));
 
-        System.out.println(ListTest.getMax(list));
-        System.out.println(ListTest.getMin(list));
+        System.out.println(Collections.max(list));
+        System.out.println(Collections.min(list));
 
     }
 
