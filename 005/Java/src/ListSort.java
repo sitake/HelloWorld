@@ -25,13 +25,9 @@ public class ListSort {
         list.add(8);
         list.add(2);
         list.add(3);
-        list.add(9);
-
-        list.sort(new CDT());
+        list.sort((x,y)->x.compareTo(y));
         System.out.println(list);
-        list.sort(new CAT());
-        System.out.println(list);
-
+        list.sort((x,y)->y.compareTo(x));
     }
 
 
