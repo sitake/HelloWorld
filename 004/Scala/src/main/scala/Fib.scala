@@ -4,6 +4,6 @@
 object Fib{
   val phi = (1+Math.sqrt(5))/2
 
-  def getFib(x:Int):Int = ((Math.pow(phi,x)-Math.pow(-phi,-x))/Math.sqrt(5)).toInt
+  def getFib(x:Int):Int = ((math.pow(phi,x)-math.pow(-phi,-x))/math.sqrt(5)).toInt
 
 }
