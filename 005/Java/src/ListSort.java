@@ -18,6 +18,12 @@ public class ListSort {
             e.printStackTrace();
         }
 
+        try {
+            reader.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
         ArrayList<Integer> list = new ArrayList<Integer>();
         list.add(3);
         list.add(5);
