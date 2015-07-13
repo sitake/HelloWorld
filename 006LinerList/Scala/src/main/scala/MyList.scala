@@ -1,36 +1,38 @@
-
 /**
- * Created by naoki on 2015/07/06.
+ * Created by naoki on 2015/07/08.
  */
+sealed trait MyList[+A] {
 
-
-class MyList[A] (head:A = null,tail:MyList[A] = null){
-
-
-  def isEmpty():Boolean = tail == null
-
-
-
-  def size():Int = isEmpty match{
-    case true => 0
-    case false => tail.size + 1
+  def get(index:Int):Option[A] =
+    this match{
+      case Nil => None
+      case Cons(head,tail) =>
+        if(index <= 0)
+          Some(head)
+        else
+          tail.get(index -1 )
   }
 
-  def add(value:A):MyList[A] = new MyList[A](value,this)
-
-  def get(index:Int):A = {
-    if(index < 0||index >= size())throw new IllegalArgumentException()
-    gett(index)
+  def add(value:A):MyList[A] ={
+    new Cons[A](value,this)
   }
 
-  private def gett(index:Int):A = index match{
-    case 0 => head
-    case _ => tail.gett(index - 1)
-  }
+  def size:Int =
+    this match{
+      case Cons(_,tail) => 1 + tail.size
+      case Nil => 0
+    }
 
-  override def toString():String = isEmpty match{
-    case true => ""
-    case false => head.toString +" " +tail.toString()
-  }
 
 }
+
+object MyList{
+  def apply[A](values:A*):MyList[A] =
+    values.foldRight(Nil:MyList[A])(Cons(_,_))
+}
+
+case class Cons[A](head:A,tail:MyList[A]) extends MyList[A]
+
+case object Nil extends MyList[Nothing]
+
+

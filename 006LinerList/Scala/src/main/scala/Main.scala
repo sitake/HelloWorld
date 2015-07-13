@@ -3,10 +3,14 @@
  */
 object Main extends App{
 
-  val l1 = new MyList[String]()
+  val l1 = new MyListAlpha[String]()
   val l2 = l1.add("apple").add("an").add("have").add("I")
   println(l2)
   println(l2.get(3))
 
+
+  val l3 = MyList.apply("I","have","an","apple")
+  val l4 = l3.add("test")
+  println(l3.get(2))
 
 }

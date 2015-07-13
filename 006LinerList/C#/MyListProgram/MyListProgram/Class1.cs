@@ -46,5 +46,29 @@ namespace MyListProgram
             if (IsEmpty()) return "";
             else return head.ToString() + " " + tail.ToString();
         }
+
+        public MyList<T> Reverse()
+        {
+            MyList<T> rList = new MyList<T>();
+            for (int i = 0; i < this.Size(); i++)
+            {
+                rList = rList.Add(this.Get(i));
+            }
+            return rList;
+
+        }
+
+        public MyList<T> Append(MyList<T> list)
+        {
+            var rList = this;
+            for (int i = list.Size() - 1; i >= 0; i--)
+            {
+                rList = rList.Add(list.Get(i));
+            }
+            return rList;
+        }
+
+        
+
     }
 }

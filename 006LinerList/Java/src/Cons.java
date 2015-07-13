@@ -1,39 +1,31 @@
+import java.util.Optional;
+
 /**
- * Created by naoki on 2015/06/30.
+ * Created by naoki on 2015/07/09.
  */
-public class Cons<T> {
+public class Cons<T> implements MyList<T> {
 
-    private T value;
-    private Cons<T> next;
+    private T head;
+    private MyList<T> tail;
 
-    public Cons(){
-    }
-    public Cons(T value){
-        this.setValue(value);
-    }
-
-    public T getValue(){
-        return this.value;
+    public Cons(T head,MyList<T> tail){
+        this.head = head;
+        this.tail = tail;
     }
 
-    public void setValue(T value){
-        this.value = value;
+    @Override
+    public Optional<T> get(int index) {
+        if(index <= 0)return Optional.of(this.head);
+        else return tail.get(index-1);
     }
 
-    public Cons<T> getNext(){
-        return this.next;
+    @Override
+    public int size() {
+        return tail.size()+1;
     }
 
-    public Cons<T> setNext(Cons<T> next){
-        return this.next = next;
+    @Override
+    public String toString(){
+        return head.toString() +" "+tail.toString();
     }
-
-    public boolean hasNext(){
-        if(this.next == null){
-            return false;
-        }
-        return true;
-    }
-
-
 }
