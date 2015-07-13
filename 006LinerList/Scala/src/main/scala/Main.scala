@@ -14,5 +14,6 @@ object Main extends App{
   println(l3.get(2))
   println(l4)
   println(l4.reverse)
+  println(l4.apend(l3))
 
 }
