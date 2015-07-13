@@ -12,5 +12,7 @@ object Main extends App{
   val l3 = MyList.apply("I","have","an","apple")
   val l4 = l3.add("test")
   println(l3.get(2))
+  println(l4)
+  println(l4.reverse)
 
 }

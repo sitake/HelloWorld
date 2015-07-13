@@ -13,8 +13,8 @@ sealed trait MyList[+A] {
           tail.get(index -1 )
   }
 
-  def add(value:A):MyList[A] ={
-    new Cons[A](value,this)
+  def add[B>:A](value:B):MyList[B] ={
+    new Cons[B](value,this)
   }
 
   def size:Int =
@@ -23,7 +23,22 @@ sealed trait MyList[+A] {
       case Nil => 0
     }
 
+  def reverse[B>:A]:MyList[B]={
+    this match{
+      case Cons(head,tail) => tail.reverse(Nil.add(head))
+      case Nil => Nil
+    }
+  }
+  private def reverse[B>:A](list:MyList[B]):MyList[B]={
+    this match{
+      case Cons(head,tail) => tail.reverse(list.add(head))
+      case Nil => list
+    }
+  }
 
+//  def apend[B>:A](list:MyList[B]):MyList[B]={
+//
+//  }
 }
 
 object MyList{
