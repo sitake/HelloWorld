@@ -29,16 +29,16 @@ sealed trait MyList[+A] {
       case Nil => Nil
     }
   }
-  private def reverse[B>:A](list:MyList[B]):MyList[B]={
-    this match{
-      case Cons(head,tail) => tail.reverse(list.add(head))
-      case Nil => list
-    }
+  private def reverse[B>:A](list:MyList[B]):MyList[B]=this match{
+    case Cons(head,tail) => tail.reverse(list.add(head))
+    case Nil => list
   }
 
-//  def apend[B>:A](list:MyList[B]):MyList[B]={
-//
-//  }
+
+  def apend[B>:A](list:MyList[B]):MyList[B]=list match{
+    case Cons(head,tail)=> apend(tail).add(head)
+    case Nil => this
+  }
 }
 
 object MyList{
