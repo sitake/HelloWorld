@@ -44,6 +44,29 @@ public interface MyList<T>{
         return rList;
     }
 
+    public default MyList<T> take(int index){
+        MyList<T> rList = new Nil<T>();
+
+        if(index > size()-1||index < 0)throw new IllegalArgumentException();
+
+        for(int i = index;i>0;i--){
+
+            rList = rList.add(this.get(i-1).get());
+        }
+        return rList;
+    }
+
+    public default MyList<T> drop(int index){
+        MyList<T> rList = new Nil<T>();
+        int size = size();
+
+        if(index > size-1||index<0)throw new IllegalArgumentException();
+
+        for(int i = size-1;i>index-1;i--){
+            rList = rList.add(this.get(i).get());
+        }
+        return rList;
+    }
 }
 
 

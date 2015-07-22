@@ -20,8 +20,11 @@ public class Nil<T> implements MyList<T> {
     public MyList<T> reverse() {
         return null;
     }
+
+
     @Override
     public String toString(){
         return "";
     }
+
 }

@@ -14,6 +14,10 @@ object Main extends App{
   println(l3.get(2))
   println(l4)
   println(l4.reverse)
-  println(l4.apend(l3))
+  println(l4.append(l3))
+  println(l4.map(str=>str.hashCode()))
+  println(l4.drop(3))
+  println(l4.take(2))
+  println(l4.drop(3).append(l4.take(3)))
 
 }

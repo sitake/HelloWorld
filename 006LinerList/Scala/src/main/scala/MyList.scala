@@ -35,10 +35,33 @@ sealed trait MyList[+A] {
   }
 
 
-  def apend[B>:A](list:MyList[B]):MyList[B]=list match{
+  def append[B>:A](list:MyList[B]):MyList[B]=list match{
     case Cons(head,tail)=> apend(tail).add(head)
     case Nil => this
   }
+
+  def map[B](f:(A=>B)):MyList[B]=this match{
+    case Cons(head,tail)=> tail.map(f).add(f(head))
+    case Nil => Nil
+  }
+
+  def drop(index:Int):MyList[A]=this match{
+    case Cons(head,tail)=>{
+      if(index<=0)tail.drop(index).add(head)
+      else tail.drop(index-1)
+    }
+    case Nil => Nil
+  }
+
+  def take(index:Int):MyList[A]=this match{
+    case Cons(head,tail)=>{
+      if(index<=0)Nil
+      else tail.take(index-1).add(head)
+    }
+    case Nil => Nil
+  }
+
+
 }
 
 object MyList{

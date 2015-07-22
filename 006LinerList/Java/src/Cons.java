@@ -28,4 +28,6 @@ public class Cons<T> implements MyList<T> {
     public String toString(){
         return head.toString() +" "+tail.toString();
     }
+
+
 }

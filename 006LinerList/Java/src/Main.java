@@ -25,6 +25,9 @@ public class Main {
         System.out.println(l3.apend(l4));
         MyList<Integer> l5 = l3.map(str -> Integer.valueOf(str.hashCode()));
         System.out.println(l5);
+        System.out.println(l3.take(2));
+        System.out.println(l3.drop(2));
+
 
     }
 }
