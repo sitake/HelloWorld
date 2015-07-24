@@ -77,7 +77,30 @@ namespace MyListProgram
             }
             return rList;
         }
-        
+
+        public MyList<T> Take(int num)
+        {
+            var rList = new MyList<T>();
+            if (num >= this.Size()) return this;
+            for (int i = num-1; i >= 0; i--)
+            {
+                rList = rList.Add(this.Get(i));
+            }
+            return rList;
+
+        }
+
+        public MyList<T> Drop(int num)
+        {
+            var rList = new MyList<T>();
+            if (num >= this.Size()) return this;
+            for (int i = this.Size() - 1; i >= num; i--)
+            {
+                rList = rList.Add(this.Get(i));
+            }
+            return rList;
+        }
+
 
     }
 }

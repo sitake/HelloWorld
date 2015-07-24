@@ -19,6 +19,10 @@ namespace MyListProgram
             var l4 = l2.Append(l3);
             Console.WriteLine(l4);
             Console.WriteLine(l4.Map<int>((str=>str.GetHashCode())));
+            Console.WriteLine(l2.Take(2));
+            Console.WriteLine(l2.Drop(2));
+            Console.WriteLine(l2.Drop(2).Append(l2.Take(2)));
+
             
         }
     }
