@@ -8,6 +8,7 @@ namespace MyListProgram
 {
     class MyList<T>
     {
+        public delegate V Function<V>(T x);
 
         MyList<T> tail;
         T head;
@@ -68,6 +69,14 @@ namespace MyListProgram
             return rList;
         }
 
+        public  MyList<V> Map<V>(Function<V> f)
+        {
+            var rList = new MyList<V>();
+            for(int i = this.Size()-2;i>=0;i--){
+                rList = rList.Add(f(this.Get(i)));
+            }
+            return rList;
+        }
         
 
     }
